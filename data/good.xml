@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+<train_shedule>
+<train_number>1</train_number>
+<depature_station>Minsk</depature_station>
+<arrival_station>Gomel</arrival_station>
+<depature_date>05/03/2019 02:41</depature_date>
+<arrival_date>03/03/2019 21:41</arrival_date>
+<travel_time>3:59</travel_time>
+</train_shedule>
+<train_shedule>
+<train_number>2</train_number>
+<depature_station>Minsk</depature_station>
+<arrival_station>Gomel</arrival_station>
+<depature_date>06/03/2019 10:41</depature_date>
+<arrival_date>03/03/2019 21:41</arrival_date>
+<travel_time>2:59</travel_time>
+</train_shedule>
+<train_shedule>
+<train_number>3</train_number>
+<depature_station>Minsk</depature_station>
+<arrival_station>Gomel</arrival_station>
+<depature_date>05/03/2019 18:41</depature_date>
+<arrival_date>03/03/2019 21:41</arrival_date>
+<travel_time>2:59</travel_time>
+</train_shedule>
+<train_shedule>
+<train_number>4</train_number>
+<depature_station>Minsk</depature_station>
+<arrival_station>Gomel</arrival_station>
+<depature_date>05/03/2019 18:41</depature_date>
+<arrival_date>03/03/2019 02:41</arrival_date>
+<travel_time>2:59</travel_time>
+</train_shedule>
+<train_shedule>
+<train_number>5</train_number>
+<depature_station>Minsk</depature_station>
+<arrival_station>Gomel</arrival_station>
+<depature_date>13/03/2019 18:41</depature_date>
+<arrival_date>03/03/2019 10:41</arrival_date>
+<travel_time>2:59</travel_time>
+</train_shedule>
+<train_shedule>
+<train_number>6</train_number>
+<depature_station>Minsk</depature_station>
+<arrival_station>Gomel</arrival_station>
+<depature_date>03/03/2019 18:41</depature_date>
+<arrival_date>03/03/2019 21:41</arrival_date>
+<travel_time>2:59</travel_time>
+</train_shedule>
+<train_shedule>
+<train_number>7</train_number>
+<depature_station>Minsk</depature_station>
+<arrival_station>Gomel</arrival_station>
+<depature_date>03/03/2019 18:41</depature_date>
+<arrival_date>03/03/2019 21:41</arrival_date>
+<travel_time>2:59</travel_time>
+</train_shedule>
+<train_shedule>
+<train_number>8</train_number>
+<depature_station>Minsk</depature_station>
+<arrival_station>Gomel</arrival_station>
+<depature_date>03/03/2019 18:41</depature_date>
+<arrival_date>03/03/2019 21:41</arrival_date>
+<travel_time>2:59</travel_time>
+</train_shedule>
+<train_shedule>
+<train_number>9</train_number>
+<depature_station>Minsk</depature_station>
+<arrival_station>Gomel</arrival_station>
+<depature_date>03/03/2019 18:41</depature_date>
+<arrival_date>03/03/2019 21:41</arrival_date>
+<travel_time>2:59</travel_time>
+</train_shedule>
+<train_shedule>
+<train_number>10</train_number>
+<depature_station>Minsk</depature_station>
+<arrival_station>Gomel</arrival_station>
+<depature_date>03/03/2019 11:41</depature_date>
+<arrival_date>03/03/2019 21:41</arrival_date>
+<travel_time>2:59</travel_time>
+</train_shedule>
+<train_shedule>
+<train_number>11</train_number>
+<depature_station>Minsk</depature_station>
+<arrival_station>Gomel</arrival_station>
+<depature_date>03/03/2019 18:41</depature_date>
+<arrival_date>03/03/2019 21:41</arrival_date>
+<travel_time>2:59</travel_time>
+</train_shedule>
+<train_shedule>
+<train_number>12</train_number>
+<depature_station>Minsk</depature_station>
+<arrival_station>Gomel</arrival_station>
+<depature_date>03/03/2019 18:41</depature_date>
+<arrival_date>03/03/2019 21:41</arrival_date>
+<travel_time>2:59</travel_time>
+</train_shedule>
+<train_shedule>
+<train_number>13</train_number>
+<depature_station>Minsk</depature_station>
+<arrival_station>Gomel</arrival_station>
+<depature_date>03/03/2019 18:41</depature_date>
+<arrival_date>03/03/2019 21:41</arrival_date>
+<travel_time>2:59</travel_time>
+</train_shedule>
+<train_shedule>
+<train_number>14</train_number>
+<depature_station>Minsk</depature_station>
+<arrival_station>Gomel</arrival_station>
+<depature_date>13/03/2019 18:41</depature_date>
+<arrival_date>03/03/2019 21:41</arrival_date>
+<travel_time>2:59</travel_time>
+</train_shedule>
+<train_shedule>
+<train_number>15</train_number>
+<depature_station>Minsk</depature_station>
+<arrival_station>Gomel</arrival_station>
+<depature_date>03/03/2019 18:41</depature_date>
+<arrival_date>03/03/2019 21:41</arrival_date>
+<travel_time>2:59</travel_time>
+</train_shedule>
+<train_shedule>
+<train_number>16</train_number>
+<depature_station>Minsk</depature_station>
+<arrival_station>Gomel</arrival_station>
+<depature_date>03/03/2019 18:41</depature_date>
+<arrival_date>03/03/2019 21:41</arrival_date>
+<travel_time>2:59</travel_time>
+</train_shedule>
+<train_shedule>
+<train_number>19</train_number>
+<depature_station>asdas</depature_station>
+<arrival_station>asdasd</arrival_station>
+<depature_date>03/03/2019 15:59</depature_date>
+<arrival_date>03/03/2019 20:59</arrival_date>
+<travel_time>4:59</travel_time>
+</train_shedule>
+<train_shedule>
+<train_number>17</train_number>
+<depature_station>saa</depature_station>
+<arrival_station>dddd</arrival_station>
+<depature_date>03/03/2019 16:03</depature_date>
+<arrival_date>03/03/2019 18:03</arrival_date>
+<travel_time>1:59</travel_time>
+</train_shedule>
+</list>

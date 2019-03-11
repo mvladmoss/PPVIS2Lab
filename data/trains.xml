@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+    <train_shedule>
+        <train_number>12</train_number>
+        <depature_station>Gomel</depature_station>
+        <arrival_station>Minsk</arrival_station>
+        <depature_date>12/03/2019 11:04</depature_date>
+        <arrival_date>12/03/2019 14:04</arrival_date>
+        <travel_time>2:59</travel_time>
+    </train_shedule>
+</list>
