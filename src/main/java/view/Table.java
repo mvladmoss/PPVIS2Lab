@@ -178,11 +178,11 @@ public class Table {
         return currentPageText;
     }
 
-     void setAllPages(int number){
+     private void setAllPages(int number){
         this.allPagesText.setText(String.valueOf(number));
     }
 
-     void setCurrentPage(int number){
+     private void setCurrentPage(int number){
         this.currentPageText.setText(String.valueOf(number));
     }
 

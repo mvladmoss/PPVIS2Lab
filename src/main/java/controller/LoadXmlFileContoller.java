@@ -4,7 +4,7 @@ import dao.*;
 import javafx.scene.control.Alert;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
-import model.MainTrainSheduleRepository;
+import model.TrainSheduleRepository;
 import model.TrainShedule;
 
 import java.io.File;
@@ -17,9 +17,11 @@ public class LoadXmlFileContoller  {
 
     private Stage stage;
     private Dao dao;
+    private TrainSheduleRepository repository;
 
-    public LoadXmlFileContoller(Stage stage){
+    public LoadXmlFileContoller(Stage stage,TrainSheduleRepository repository){
         this.stage = stage;
+        this.repository = repository;
         try {
             this.dao = new XmlDao(new SaxParser(),new DomWriter());
         } catch (ParseException e) {
@@ -38,9 +40,8 @@ public class LoadXmlFileContoller  {
         }
         try {
             trainShedules = dao.read(file.getPath());
-            MainTrainSheduleRepository sheduleRepository = MainTrainSheduleRepository.getInstance();
-            sheduleRepository.clear();
-            sheduleRepository.addAll(trainShedules);
+            repository.clear();
+            repository.addAll(trainShedules);
             return trainShedules;
         } catch (DaoException e) {
             Alert alert = new Alert(Alert.AlertType.ERROR);

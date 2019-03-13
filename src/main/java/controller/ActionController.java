@@ -1,7 +1,5 @@
 package controller;
 
-import javafx.event.Event;
-import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
@@ -10,7 +8,8 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import model.MainTrainSheduleRepository;
+import model.Train;
+import model.TrainSheduleRepository;
 import model.SpecificationsEvents;
 import model.TrainShedule;
 import specifications.TrainSheduleSpecification;
@@ -44,9 +43,11 @@ public class ActionController {
     private static final String NO_SUCH_RECORDS = "No records were found to delete";
     private static final String DELETE_INFORMATION = " records were deleted";
     private boolean deleteSpecification;
+    private TrainSheduleRepository repository;
 
-    public ActionController(boolean deleteSpecification) {
+    public ActionController(boolean deleteSpecification, TrainSheduleRepository repository) {
         this.deleteSpecification = deleteSpecification;
+        this.repository = repository;
     }
 
     public List<TrainShedule> getData(SpecificationsEvents specification) {
@@ -172,7 +173,6 @@ public class ActionController {
         if (shedulePredicate.get() == null) {
             return new ArrayList<>();
         }
-        MainTrainSheduleRepository repository = MainTrainSheduleRepository.getInstance();
         List<TrainShedule> allShedules = repository.getAll();
         List<TrainShedule> findShedules = allShedules.stream()
                 .filter(shedulePredicate.get())
@@ -198,7 +198,6 @@ public class ActionController {
     }
 
     private void deleteRecords(List<TrainShedule> findShedules) {
-        MainTrainSheduleRepository repository = MainTrainSheduleRepository.getInstance();
         repository.removeAll(findShedules);
     }
 

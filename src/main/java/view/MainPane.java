@@ -8,6 +8,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import model.TrainShedule;
+import model.TrainSheduleRepository;
 
 import java.util.List;
 
@@ -38,6 +39,7 @@ public class MainPane extends Application {
     private static final double DELETE_RECORD_TOP_ANCHOR = 370d;
     private Table table;
     private Stage stage;
+    private TrainSheduleRepository repository;
 
     @Override
     public void start(Stage primaryStage) {
@@ -48,11 +50,12 @@ public class MainPane extends Application {
         table = new Table();
         table.customTable(root,115d);
         customMenu(root,primaryStage);
+        repository = new TrainSheduleRepository();
         new ButtonCreator().customButton(root,IMAGE_URL_CHOOSE_FILE,CHOOSE_FILE_BUTTON_TOP_ANCHOR,event -> handleLoadXmlFile());
-        new ButtonCreator().customButton(root, IMAGE_URL_INPUT_RECORD,INPUT_RECORD_TOP_ANCHOR,event -> new InsertRecordPane(table));
-        new ButtonCreator().customButton(root,IMAGE_URL_SAVE_BUTTON,SAVE_RECORD_TOP_ANCHOR,event -> new SaveRecordsController(primaryStage).save());
-        new ButtonCreator().customButton(root,IMAGE_URL_FIND_BUTTON,FIND_RECORD_TOP_ANCHOR,event -> new ActionRecordPane());
-        new ButtonCreator().customButton(root,IMAGE_URL_DELETE_BUTTON,DELETE_RECORD_TOP_ANCHOR,event -> new ActionRecordPane(table));
+        new ButtonCreator().customButton(root, IMAGE_URL_INPUT_RECORD,INPUT_RECORD_TOP_ANCHOR,event -> new InsertRecordPane(table,repository));
+        new ButtonCreator().customButton(root,IMAGE_URL_SAVE_BUTTON,SAVE_RECORD_TOP_ANCHOR,event -> new SaveRecordsController(primaryStage,repository).save());
+        new ButtonCreator().customButton(root,IMAGE_URL_FIND_BUTTON,FIND_RECORD_TOP_ANCHOR,event -> new ActionRecordPane(repository));
+        new ButtonCreator().customButton(root,IMAGE_URL_DELETE_BUTTON,DELETE_RECORD_TOP_ANCHOR,event -> new ActionRecordPane(table,repository));
         primaryStage.show();
     }
 
@@ -60,30 +63,30 @@ public class MainPane extends Application {
         MenuBar menuBar = new MenuBar();
         menuBar.setMinSize(MENU_BAR_WIDTH,MENU_BAR_HEIGHT);
 
-        /*Menu fileMenu = new Menu(FILE_MENU);
+        Menu fileMenu = new Menu(FILE_MENU);
         MenuItem openFileItem = new MenuItem(OPEN_FILE);
-        openFileItem.setOnAction(new OpenXmlFile(stage,table));
+        openFileItem.setOnAction(event -> handleLoadXmlFile());
         MenuItem saveFileItem = new MenuItem(SAVE_FILE);
-        saveFileItem.setOnAction(new SaveRecordsController(stage,table));
+        saveFileItem.setOnAction(event -> new SaveRecordsController(stage,repository).save());
         MenuItem exitProgramItem = new MenuItem(EXIT);
         exitProgramItem.setOnAction(event -> stage.close());
-        fileMenu.getItems().addAll(openFileItem,saveFileItem,exitProgramItem);*/
+        fileMenu.getItems().addAll(openFileItem,saveFileItem,exitProgramItem);
 
-        /*Menu recordMenu = new Menu(RECORDS);
+        Menu recordMenu = new Menu(RECORDS);
         MenuItem addRecordItem = new MenuItem(ADD_RECORD);
-        addRecordItem.setOnAction(new CreateInsertPaneEvent(table));
+        addRecordItem.setOnAction(event -> new InsertRecordPane(table,repository));
         MenuItem findRecordItem = new MenuItem(FIND_RECORD);
-        findRecordItem.setOnAction(new CreateFindPaneEvent());
+        findRecordItem.setOnAction(event -> new ActionRecordPane(repository));
         MenuItem deleteRecordItem = new MenuItem(DELETE_RECORD);
-        deleteRecordItem.setOnAction(new CreateDeletePane());
+        deleteRecordItem.setOnAction(event -> new ActionRecordPane(table,repository));
         recordMenu.getItems().addAll(addRecordItem,findRecordItem,deleteRecordItem);
 
         menuBar.getMenus().addAll(fileMenu,recordMenu);
-        pane.getChildren().addAll(menuBar);*/
+        pane.getChildren().addAll(menuBar);
     }
 
     private void handleLoadXmlFile(){
-        LoadXmlFileContoller loadXmlFileContoller = new LoadXmlFileContoller(stage);
+        LoadXmlFileContoller loadXmlFileContoller = new LoadXmlFileContoller(stage,repository);
         List<TrainShedule> trainShedules = loadXmlFileContoller.getData();
         table.setObservableList(trainShedules);
         Pagination pagination = table.getPagination();

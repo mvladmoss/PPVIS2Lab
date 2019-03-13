@@ -1,7 +1,7 @@
 package view;
 
 import controller.ActionController;
-import controller.GetRecordsController;
+import controller.FindAllRecordsController;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.RadioButton;
@@ -11,6 +11,8 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import model.SpecificationsEvents;
 import model.TrainShedule;
+import model.TrainSheduleRepository;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,19 +25,24 @@ import java.util.List;
      private static final String DELETE_PANE = "Delete pane";
      private ToggleGroup toggleGroup;
      private List<RadioButton> buttonList;
-     private ActionController controller = new ActionController(true);
+     private ActionController controller;
      private Table table;
      private Pane pane;
      private Stage stage;
+     private TrainSheduleRepository repository;
 
-     ActionRecordPane(Table table) {
+     ActionRecordPane(Table table, TrainSheduleRepository repository) {
          this.table = table;
+         this.repository = repository;
+         controller = new ActionController(true,repository);
          start();
          stage.showAndWait();
      }
 
-     ActionRecordPane(){
+     ActionRecordPane(TrainSheduleRepository repository){
          this.table = new Table();
+         this.repository = repository;
+         controller =  new ActionController(false,repository);
          start();
          table.customTable(pane,300d);
          customPagination(pane);
@@ -68,7 +75,7 @@ import java.util.List;
 
      private void customPagination(Pane pane) {
          Pagination pagination = table.getPagination();
-         List<TrainShedule> allShedules = new ArrayList<>(new GetRecordsController().getRecords());
+         List<TrainShedule> allShedules = new ArrayList<>(new FindAllRecordsController(repository).getRecords());
          pagination.setAllTrainShedules(allShedules);
          pagination.setFirstPage();
          pagination.setPagesNumber(table.getAllPagesText());
@@ -108,11 +115,11 @@ import java.util.List;
          Button resetButton = new Button();
          resetButton.setText("Reset");
          pane.getChildren().add(resetButton);
-         AnchorPane.setTopAnchor(resetButton, 340d);
+         AnchorPane.setTopAnchor(resetButton, 240d);
          AnchorPane.setLeftAnchor(resetButton, 160d);
          resetButton.setOnAction(event -> {
              Pagination pagination = table.getPagination();
-             GetRecordsController controller = new GetRecordsController();
+             FindAllRecordsController controller = new FindAllRecordsController(repository);
              List<TrainShedule> shedules = controller.getRecords();
              pagination.refresh(shedules);
              table.refreshTableView();

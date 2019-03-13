@@ -9,6 +9,7 @@ import javafx.stage.Stage;
 import lombok.Getter;
 import lombok.Setter;
 import model.TrainShedule;
+import model.TrainSheduleRepository;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -49,9 +50,11 @@ public class InsertRecordPane {
     private Button closeButton;
     private Stage stage;
     private Table table;
+    private TrainSheduleRepository repository;
 
-    public InsertRecordPane(Table table) {
+    InsertRecordPane(Table table, TrainSheduleRepository repository) {
         this.trainNumberField = new TextField();
+        this.repository = repository;
         this.departureStationField = new TextField();
         this.arrivalStationField = new TextField();
         this.departureDate = new DatePicker();
@@ -146,7 +149,7 @@ public class InsertRecordPane {
     }
 
     private void insertTrainShedule(){
-        InsertXmlDataContoller contoller = new InsertXmlDataContoller(this);
+        InsertXmlDataContoller contoller = new InsertXmlDataContoller(this,repository);
         TrainShedule trainShedule = contoller.addTrainShedule();
         Pagination pagination = table.getPagination();
         pagination.addNewRecord(trainShedule);

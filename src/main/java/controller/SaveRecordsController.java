@@ -1,11 +1,9 @@
 package controller;
 
 import dao.DaoException;
-import model.MainTrainSheduleRepository;
+import model.TrainSheduleRepository;
 import model.TrainShedule;
 import dao.ParseException;
-import javafx.event.Event;
-import javafx.event.EventHandler;
 import javafx.scene.control.Alert;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
@@ -21,9 +19,11 @@ public class SaveRecordsController{
     private static final String FILE_ERROR = "An error occurred while saving the file";
     private Stage stage;
     private Dao dao;
+    private TrainSheduleRepository repository;
 
-    public SaveRecordsController(Stage stage){
+    public SaveRecordsController(Stage stage,TrainSheduleRepository repository){
         this.stage = stage;
+        this.repository = repository;
         try {
             this.dao = new XmlDao(new SaxParser(),new DomWriter());
         } catch (ParseException e) {
@@ -39,7 +39,7 @@ public class SaveRecordsController{
         if(file==null){
             return;
         }
-        List<TrainShedule> sheduleList = MainTrainSheduleRepository.getInstance().getAll();
+        List<TrainShedule> sheduleList = repository.getAll();
         try {
             dao.save(sheduleList,file.getPath());
         } catch (DaoException e) {

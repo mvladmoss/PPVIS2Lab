@@ -2,61 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f7acd32-895a-4f92-a60f-67cc00272ba5" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/GetRecordsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/MainTrainSheduleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/view/ActionRecordPane.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/CreateDeletePane.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/CreateFindPaneEvent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/CreateInsertPaneEvent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/OpenXmlFile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SaveRecordInTableEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/InsertXmlDataContoller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SaveRecordsInXmlEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SaveRecordsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/TravelTimeChangeEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TravelTimeChangeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/specifications/ActionSpecification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ActionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Pagination.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/Pagination.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parser/ParseException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/ParseException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parser/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parser/SaxParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/SaxParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parser/XmlElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/XmlElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/Dao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/RepositoryException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/DaoException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/XmlRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/XmlDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/DeleteRecordPane.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/FindRecordPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/FindRecordPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ActionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ActionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/GetRecordsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/FindAllRecordsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/InsertXmlDataContoller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/InsertXmlDataContoller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/LoadXmlFileContoller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/LoadXmlFileContoller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SaveRecordsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SaveRecordsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/MainTrainSheduleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/TrainSheduleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/ActionRecordPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/ActionRecordPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/FindRecordPane.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/InsertRecordPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/InsertRecordPane.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/MainPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/MainPane.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/Table.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/writer/DomWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/DomWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/writer/WriteException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/WriteException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/writer/XmlWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/XmlWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/CreateDeletePane.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/CreateFindPaneEvent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/CreateInsertPaneEvent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/OpenXmlFile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/SaveRecordInTableEvent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/SaveRecordsInXmlEvent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/TravelTimeChangeEvent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/specifications/ActionSpecification$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/specifications/ActionSpecification.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exceptions/ParseException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exceptions/RepositoryException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exceptions/WriteException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/Pagination.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/parser/Parser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/parser/SaxParser$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/parser/SaxParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/parser/XmlElements.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repository/Repository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repository/XmlRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/DeleteRecordPane.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/FindRecordPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/FindRecordPane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/ActionController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/ActionController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/ActionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/ActionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/GetRecordsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/InsertXmlDataContoller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/InsertXmlDataContoller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/LoadXmlFileContoller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/LoadXmlFileContoller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/SaveRecordsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/SaveRecordsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/MainTrainSheduleRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/ActionRecordPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/ActionRecordPane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/FindRecordPane.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/view/InsertRecordPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/InsertRecordPane.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/view/MainPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/MainPane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/Table.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/Table.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/writer/DomWriter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/writer/XmlWriter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/trains.iml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -68,11 +36,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/view/InsertRecordPane.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/view/MainPane.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="151" column="12" selection-start-line="151" selection-start-column="12" selection-end-line="151" selection-end-column="12" />
+            <state relative-caret-position="223">
+              <caret line="56" column="57" selection-start-line="56" selection-start-column="57" selection-end-line="56" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -83,8 +51,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/view/Table.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="647">
-              <caret line="204" column="8" selection-start-line="204" selection-start-column="8" selection-end-line="204" selection-end-column="8" />
+            <state relative-caret-position="291">
+              <caret line="165" column="39" selection-start-line="165" selection-start-column="39" selection-end-line="165" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -93,37 +61,14 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/view/MainPane.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/TrainSheduleRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="53" column="121" selection-start-line="53" selection-start-column="121" selection-end-line="53" selection-end-column="121" />
+            <state relative-caret-position="68">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/view/FindRecordPane.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="33" column="8" lean-forward="true" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#805#806#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/GetRecordsController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#566#567#0" expanded="true" />
+                <element signature="e#619#620#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -132,12 +77,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/view/Pagination.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="-865">
               <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3584#3585#0" expanded="true" />
-                <element signature="e#3643#3644#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -146,21 +89,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controller/ActionController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1342">
-              <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+            <state relative-caret-position="199">
+              <caret line="176" column="62" lean-forward="true" selection-start-line="176" selection-start-column="62" selection-end-line="176" selection-end-column="62" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2112#2113#0" expanded="true" />
+                <element signature="e#9070#9071#0" expanded="true" />
+                <element signature="e#9120#9121#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/view/ActionRecordPane.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="19" column="56" lean-forward="true" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
+            <state relative-caret-position="-219">
+              <caret line="59" column="20" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -169,10 +112,25 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dao/SaxParser.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/FindAllRecordsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="88" column="17" selection-start-line="88" selection-start-column="17" selection-end-line="88" selection-end-column="17" />
+            <state relative-caret-position="255">
+              <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#277#278#0" expanded="true" />
+                <element signature="e#321#322#0" expanded="true" />
+                <element signature="e#408#409#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/SaveRecordsController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="586">
+              <caret line="41" column="51" selection-start-line="41" selection-start-column="51" selection-end-line="41" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -181,10 +139,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/TravelTimeChangeController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/LoadXmlFileContoller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+            <state relative-caret-position="290">
+              <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/InsertXmlDataContoller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -213,7 +183,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/view/FileChooserButton.java" />
         <option value="$PROJECT_DIR$/src/main/java/view/InputButton.java" />
         <option value="$PROJECT_DIR$/src/main/java/view/FileOpenButton.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/CreateFindPaneEvent.java" />
@@ -245,25 +214,26 @@
         <option value="$PROJECT_DIR$/src/main/java/repository/MainRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/repository/TrainSheduleRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/view/ButtonCreator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/TrainSheduleRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/LoadXmlFileContoller.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/InsertXmlDataContoller.java" />
-        <option value="$PROJECT_DIR$/src/main/java/view/InsertRecordPane.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/SaveRecordsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/SaxParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/specifications/ActionSpecification.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/MainTrainSheduleRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/specifications/ActionController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/ActionController.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/TravelTimeChangeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/view/Pagination.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/GetAllRecordsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/GetRecordsController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/view/Table.java" />
         <option value="$PROJECT_DIR$/src/main/java/view/DeleteRecordPane.java" />
         <option value="$PROJECT_DIR$/src/main/java/view/FindRecordPane.java" />
-        <option value="$PROJECT_DIR$/src/main/java/view/MainPane.java" />
+        <option value="$PROJECT_DIR$/src/main/java/view/InsertRecordPane.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/InsertXmlDataContoller.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/FindAllRecordsController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/LoadXmlFileContoller.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/ActionController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/TrainSheduleRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/SaveRecordsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/view/ActionRecordPane.java" />
+        <option value="$PROJECT_DIR$/src/main/java/view/Table.java" />
+        <option value="$PROJECT_DIR$/src/main/java/view/MainPane.java" />
       </list>
     </option>
   </component>
@@ -486,27 +456,28 @@
       <workItem from="1552162359628" duration="17795000" />
       <workItem from="1552304128110" duration="194000" />
       <workItem from="1552304353205" duration="14691000" />
+      <workItem from="1552483779501" duration="3753000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128628000" />
+    <option name="totallyTimeSpent" value="132381000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20293398" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20537898" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Image Layers" order="6" />
-      <window_info anchor="bottom" id="Inspection Results" weight="0.32922733" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32922733" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49934897" weight="0.0537514" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.31448275" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49934897" visible="true" weight="0.10638298" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.31354985" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -519,6 +490,7 @@
       <window_info anchor="bottom" id="Messages" order="13" weight="0.3281075" />
       <window_info anchor="bottom" id="Statistic" order="14" />
       <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Inspection Results" order="16" weight="0.32922733" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -538,16 +510,16 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/controller/SaveRecordsController.java</url>
-          <line>37</line>
-          <properties />
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/dao/XmlDao.java</url>
           <line>27</line>
           <properties />
           <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/controller/ActionController.java</url>
+          <line>175</line>
+          <properties />
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -660,13 +632,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/Controller.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/DomWriter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -709,43 +675,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/repository/Repository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/CreateFindPaneEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/CreateDeletePane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/MainTrainSheduleRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repository/Repository.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/CreateFindPaneEvent.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/CreateDeletePane.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/javafx-src.zip!/com/sun/javafx/tk/quantum/GlassViewEventHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -753,28 +685,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/InsertXmlDataContoller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="39" column="71" lean-forward="true" selection-start-line="37" selection-start-column="12" selection-end-line="39" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#454#455#0" expanded="true" />
-            <element signature="e#510#511#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/CreateInsertPaneEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/CreateInsertPaneEvent.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/view/ButtonCreator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -782,48 +693,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/InsertXmlDataContoller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="67" selection-start-line="17" selection-start-column="67" selection-end-line="17" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#454#455#0" expanded="true" />
-            <element signature="e#510#511#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/LoadXmlFileContoller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
-          <caret line="41" column="38" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/OpenXmlFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/SaveRecordsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/OpenXmlFile.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/SaxParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
+        <state relative-caret-position="1258">
           <caret line="88" column="17" selection-start-line="88" selection-start-column="17" selection-end-line="88" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -831,77 +704,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/MainTrainSheduleRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="36" column="48" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#819#820#0" expanded="true" />
-            <element signature="e#872#873#0" expanded="true" />
-            <element signature="e#936#937#0" expanded="true" />
-            <element signature="e#979#980#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/TravelTimeChangeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
+        <state relative-caret-position="272">
           <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/GetRecordsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/Table.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="647">
-          <caret line="204" column="8" selection-start-line="204" selection-start-column="8" selection-end-line="204" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/ActionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1342">
-          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2112#2113#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/Pagination.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3584#3585#0" expanded="true" />
-            <element signature="e#3643#3644#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/MainPane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="53" column="121" selection-start-line="53" selection-start-column="121" selection-end-line="53" selection-end-column="121" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -910,8 +716,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/view/InsertRecordPane.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="151" column="12" selection-start-line="151" selection-start-column="12" selection-end-line="151" selection-end-column="12" />
+        <state relative-caret-position="624">
+          <caret line="151" column="85" selection-start-line="151" selection-start-column="85" selection-end-line="151" selection-end-column="85" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -920,19 +726,116 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/view/FindRecordPane.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="33" column="8" lean-forward="true" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="37" />
+        <state relative-caret-position="272">
+          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#782#783#0" expanded="true" />
             <element signature="e#805#806#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/InsertXmlDataContoller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/FindAllRecordsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#277#278#0" expanded="true" />
+            <element signature="e#321#322#0" expanded="true" />
+            <element signature="e#408#409#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/TrainSheduleRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#566#567#0" expanded="true" />
+            <element signature="e#619#620#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/LoadXmlFileContoller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/SaveRecordsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="586">
+          <caret line="41" column="51" selection-start-line="41" selection-start-column="51" selection-end-line="41" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/ActionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="176" column="62" lean-forward="true" selection-start-line="176" selection-start-column="62" selection-end-line="176" selection-end-column="62" />
+          <folding>
+            <element signature="e#9070#9071#0" expanded="true" />
+            <element signature="e#9120#9121#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/Pagination.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-865">
+          <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/Table.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="165" column="39" selection-start-line="165" selection-start-column="39" selection-end-line="165" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/view/ActionRecordPane.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="19" column="56" lean-forward="true" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
+        <state relative-caret-position="-219">
+          <caret line="59" column="20" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/MainPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="56" column="57" selection-start-line="56" selection-start-column="57" selection-end-line="56" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

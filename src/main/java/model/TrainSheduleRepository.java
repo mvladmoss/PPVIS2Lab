@@ -2,22 +2,12 @@ package model;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Predicate;
-import java.util.stream.Collectors;
 
-public class MainTrainSheduleRepository {
+public class TrainSheduleRepository {
 
-    private static MainTrainSheduleRepository instance;
     private List<TrainShedule> trainSheduleList;
 
-    public static MainTrainSheduleRepository getInstance() {
-        if(instance==null){
-            instance = new MainTrainSheduleRepository();
-        }
-        return instance;
-    }
-
-    private MainTrainSheduleRepository(){
+    public TrainSheduleRepository(){
         trainSheduleList = new ArrayList<>();
     }
 
@@ -37,11 +27,6 @@ public class MainTrainSheduleRepository {
         trainSheduleList.removeAll(sheduleList);
     }
 
-    public List<TrainShedule> query(Predicate<TrainShedule> specification) {
-        return trainSheduleList.stream()
-                .filter(specification)
-                .collect(Collectors.toList());
-    }
 
     public List<TrainShedule> getAll() {
         return trainSheduleList;
