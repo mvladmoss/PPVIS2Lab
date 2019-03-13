@@ -7,6 +7,9 @@ import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import model.TrainShedule;
+
+import java.util.List;
 
 public class MainPane extends Application {
 
@@ -33,21 +36,23 @@ public class MainPane extends Application {
     private static final double SAVE_RECORD_TOP_ANCHOR = 270d;
     private static final double FIND_RECORD_TOP_ANCHOR = 320d;
     private static final double DELETE_RECORD_TOP_ANCHOR = 370d;
-    private static Table table;
+    private Table table;
+    private Stage stage;
 
     @Override
     public void start(Stage primaryStage) {
+        this.stage = primaryStage;
         AnchorPane root = new AnchorPane();
         primaryStage.setTitle(PROGRAM_NAME);
         primaryStage.setScene(new Scene(root, START_WINDOW_WIDTH, START_WINDOW_HEIGHT));
         table = new Table();
         table.customTable(root,115d);
         customMenu(root,primaryStage);
-        new ButtonCreator().customButton(root,IMAGE_URL_CHOOSE_FILE,CHOOSE_FILE_BUTTON_TOP_ANCHOR,new OpenXmlFile(primaryStage,table));
-        new ButtonCreator().customButton(root, IMAGE_URL_INPUT_RECORD,INPUT_RECORD_TOP_ANCHOR,new CreateInsertPaneEvent(table));
-        new ButtonCreator().customButton(root,IMAGE_URL_SAVE_BUTTON,SAVE_RECORD_TOP_ANCHOR,new SaveRecordsInXmlEvent(primaryStage,table));
-        new ButtonCreator().customButton(root,IMAGE_URL_FIND_BUTTON,FIND_RECORD_TOP_ANCHOR,new CreateFindPaneEvent());
-        new ButtonCreator().customButton(root,IMAGE_URL_DELETE_BUTTON,DELETE_RECORD_TOP_ANCHOR,new CreateDeletePane());
+        new ButtonCreator().customButton(root,IMAGE_URL_CHOOSE_FILE,CHOOSE_FILE_BUTTON_TOP_ANCHOR,event -> handleLoadXmlFile());
+        new ButtonCreator().customButton(root, IMAGE_URL_INPUT_RECORD,INPUT_RECORD_TOP_ANCHOR,event -> new InsertRecordPane(table));
+        new ButtonCreator().customButton(root,IMAGE_URL_SAVE_BUTTON,SAVE_RECORD_TOP_ANCHOR,event -> new SaveRecordsController(primaryStage).save());
+        new ButtonCreator().customButton(root,IMAGE_URL_FIND_BUTTON,FIND_RECORD_TOP_ANCHOR,event -> new ActionRecordPane());
+        new ButtonCreator().customButton(root,IMAGE_URL_DELETE_BUTTON,DELETE_RECORD_TOP_ANCHOR,event -> new ActionRecordPane(table));
         primaryStage.show();
     }
 
@@ -55,16 +60,16 @@ public class MainPane extends Application {
         MenuBar menuBar = new MenuBar();
         menuBar.setMinSize(MENU_BAR_WIDTH,MENU_BAR_HEIGHT);
 
-        Menu fileMenu = new Menu(FILE_MENU);
+        /*Menu fileMenu = new Menu(FILE_MENU);
         MenuItem openFileItem = new MenuItem(OPEN_FILE);
         openFileItem.setOnAction(new OpenXmlFile(stage,table));
         MenuItem saveFileItem = new MenuItem(SAVE_FILE);
-        saveFileItem.setOnAction(new SaveRecordsInXmlEvent(stage,table));
+        saveFileItem.setOnAction(new SaveRecordsController(stage,table));
         MenuItem exitProgramItem = new MenuItem(EXIT);
         exitProgramItem.setOnAction(event -> stage.close());
-        fileMenu.getItems().addAll(openFileItem,saveFileItem,exitProgramItem);
+        fileMenu.getItems().addAll(openFileItem,saveFileItem,exitProgramItem);*/
 
-        Menu recordMenu = new Menu(RECORDS);
+        /*Menu recordMenu = new Menu(RECORDS);
         MenuItem addRecordItem = new MenuItem(ADD_RECORD);
         addRecordItem.setOnAction(new CreateInsertPaneEvent(table));
         MenuItem findRecordItem = new MenuItem(FIND_RECORD);
@@ -74,10 +79,21 @@ public class MainPane extends Application {
         recordMenu.getItems().addAll(addRecordItem,findRecordItem,deleteRecordItem);
 
         menuBar.getMenus().addAll(fileMenu,recordMenu);
-        pane.getChildren().addAll(menuBar);
+        pane.getChildren().addAll(menuBar);*/
     }
 
-    public static Table getTable() {
-        return table;
+    private void handleLoadXmlFile(){
+        LoadXmlFileContoller loadXmlFileContoller = new LoadXmlFileContoller(stage);
+        List<TrainShedule> trainShedules = loadXmlFileContoller.getData();
+        table.setObservableList(trainShedules);
+        Pagination pagination = table.getPagination();
+        pagination.getAvaibleTrainShedules().clear();
+        pagination.getAllTrainShedules().clear();
+        pagination.setAllTrainShedules(trainShedules);
+        pagination.setFirstPage();
+        pagination.setPagesNumber(table.getAllPagesText());
+        pagination.setStartPageNumber(table.getCurrentPageText());
+        table.setTotalRecordsNumber(pagination.getElementsCount());
     }
+
 }

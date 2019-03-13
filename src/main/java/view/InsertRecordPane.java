@@ -1,13 +1,15 @@
 package view;
 
-import controller.SaveRecordInTableEvent;
-import controller.TravelTimeChangeEvent;
+import controller.InsertXmlDataContoller;
+import controller.TravelTimeChangeController;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.*;
 import javafx.stage.Stage;
 import lombok.Getter;
 import lombok.Setter;
+import model.TrainShedule;
+
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
@@ -17,7 +19,6 @@ public class InsertRecordPane {
 
     private final static int START_WINDOW_WIDTH = 800;
     private final static int START_WINDOW_HEIGHT = 320;
-
     private static final String TRAIN_NUMBER = "Train number";
     private static final String DEPARTURE_STATION = "Departure station";
     private static final String ARRIVAL_STATION = "Arrival station";
@@ -58,10 +59,11 @@ public class InsertRecordPane {
         this.departureTime = new TimeSpinner();
         this.arrivalTime = new TimeSpinner();
         this.travelDuration = new TextField();
-        this.table= table;
+        this.table = table;
+        start();
     }
 
-    public void start(){
+    private void start(){
         AnchorPane root = new AnchorPane();
         Scene scene = new Scene(root,START_WINDOW_WIDTH,START_WINDOW_HEIGHT);
         stage = new Stage();
@@ -69,8 +71,8 @@ public class InsertRecordPane {
         createInputField(root,TRAIN_NUMBER,20d,trainNumberField);
         createInputField(root,DEPARTURE_STATION,240d,departureStationField);
         createInputField(root,ARRIVAL_STATION,460d,arrivalStationField);
-        createCalendat(root,DEPARTURE_TIME,departureDate,departureTime,20d);
-        createCalendat(root,ARRIVAL_TIME,arrivalDate,arrivalTime,280d);
+        createCalendar(root,DEPARTURE_TIME,departureDate,departureTime,20d);
+        createCalendar(root,ARRIVAL_TIME,arrivalDate,arrivalTime,280d);
         createTextField(root,travelDuration);
         createAddButton(root);
         createCloseButton(root);
@@ -80,7 +82,7 @@ public class InsertRecordPane {
     private void createAddButton(Pane pane){
         addRecordButton = new Button();
         addRecordButton.setText(ADD_BUTTON_NAME);
-        addRecordButton.setOnAction(new SaveRecordInTableEvent(this,table));
+        addRecordButton.setOnAction(event -> insertTrainShedule());
         pane.getChildren().add(addRecordButton);
         AnchorPane.setTopAnchor(addRecordButton,BUTTON_TOP_ANCHOR);
         AnchorPane.setLeftAnchor(addRecordButton,30d);
@@ -96,7 +98,7 @@ public class InsertRecordPane {
 
     }
 
-    private void createCalendat(Pane root,String name,DatePicker datePicker,TimeSpinner timeSpinner,double leftAnchor){
+    private void createCalendar(Pane root, String name, DatePicker datePicker, TimeSpinner timeSpinner, double leftAnchor){
         TitledPane tilePane = new TitledPane();
         tilePane.setText(name);
         tilePane.setMinHeight(PANE_HEIGHT);
@@ -105,8 +107,8 @@ public class InsertRecordPane {
         VBox vBox = new VBox();
         datePicker.setValue(LocalDate.of(INITIAL_YEAR, INITIAL_MONTH,INITIAL_DAY));
         datePicker.setShowWeekNumbers(true);
-        datePicker.valueProperty().addListener(new TravelTimeChangeEvent(this));
-        timeSpinner.valueProperty().addListener(new TravelTimeChangeEvent(this));
+        datePicker.valueProperty().addListener(new TravelTimeChangeController(this));
+        timeSpinner.valueProperty().addListener(new TravelTimeChangeController(this));
         vBox.getChildren().addAll(datePicker,timeSpinner);
         tilePane.setContent(vBox);
         AnchorPane.setTopAnchor(tilePane,TOP_ANCHOR);
@@ -141,5 +143,13 @@ public class InsertRecordPane {
         vBox.getChildren().addAll(travelDuration);
         titledPane.setContent(vBox);
         pane.getChildren().add(titledPane);
+    }
+
+    private void insertTrainShedule(){
+        InsertXmlDataContoller contoller = new InsertXmlDataContoller(this);
+        TrainShedule trainShedule = contoller.addTrainShedule();
+        Pagination pagination = table.getPagination();
+        pagination.addNewRecord(trainShedule);
+        table.setTotalRecordsNumber(pagination.getElementsCount());
     }
 }

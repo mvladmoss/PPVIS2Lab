@@ -9,8 +9,9 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
-import model.Pagination;
 import model.TrainShedule;
+
+import java.util.List;
 
 public class Table {
     private final static int TABLE_WIDTH = 815;
@@ -169,27 +170,38 @@ public class Table {
         totalRecords.setText(String.valueOf(pagination.getElementsCount()));
     }
 
-    public Text getAllPagesText() {
+     Text getAllPagesText() {
         return allPagesText;
     }
 
-    public Text getCurrentPageText() {
+     Text getCurrentPageText() {
         return currentPageText;
     }
 
-    public void setAllPages(int number){
+     void setAllPages(int number){
         this.allPagesText.setText(String.valueOf(number));
     }
 
-    public void setCurrentPage(int number){
+     void setCurrentPage(int number){
         this.currentPageText.setText(String.valueOf(number));
     }
 
-    public Pagination getPagination() {
+     Pagination getPagination() {
         return pagination;
     }
 
-    public void setTotalRecordsNumber(int totalRecords) {
+     void setTotalRecordsNumber(int totalRecords) {
         this.totalRecords.setText(String.valueOf(totalRecords));
+    }
+
+     void setObservableList(List<TrainShedule> observableList) {
+        this.observableList.clear();
+        this.observableList.addAll(observableList);
+    }
+
+    void refreshTableView(){
+        setAllPages(pagination.getNumberOfPages());
+        setCurrentPage(pagination.getSelectedPage());
+        setTotalRecordsNumber(pagination.getElementsCount());
     }
 }
